@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		let arr = [60,18,78,20,99,10];
+		//map 映射，一对一进行对比
+		let result = arr.map(item=>item>=60?'及格':'不及格'); // 注意 map(参数)内一定会有参数,参数为数组的个值
+		console.log(result);
+		//reduce 汇总,平均值
+		let sum = arr.reduce((a,b)=>a+b);
+		let mean = sum/arr.length;
+		console.log(sum);
+		console.log(mean);
+		//filter	过滤器,过滤不满足被3整除这个条件的数
+		let fil_result = arr.filter(item=>item%3==0);
+		console.log(fil_result);
+		//forEach 循环（迭代）
+		arr.forEach((item,index)=>{
+			console.log(item+','+index);
+		});
+	</script>
+</html>

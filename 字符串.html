@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		//字符串判断以什么开头结尾; startsWith ,endsWith
+		window.onload=()=>{
+			show(str);
+		}
+		let str = '字符串.txt';
+		let show=str=>{
+			if(str.startsWith('字符串')){
+				console.log('start YES');
+			}else{
+				console.log('start NO');
+			}
+			if(str.endsWith('.txt')){
+				console.log('end YES');
+			}else{
+				console.log('end NO');
+			}
+		}
+		//字符串模版,${变量},在字符串外加反单引号 ``
+		let title = '标题';
+		let content = '内容';
+		let str_model = `${title},${content}`;
+		console.log(str_model);
+	</script>
+</html>
